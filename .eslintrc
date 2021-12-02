@@ -1,0 +1,33 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "extends": [
+    "@pancakeswap-libs/eslint-config-pancake",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "rules": {
+    "no-console": ["warn", { "allow": ["info", "warn", "error", "debug"] }],
+    "prefer-destructuring": ["warn", { "object": true, "array": false }],
+    "no-underscore-dangle": 0,
+    "import/prefer-default-export": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "no-nested-ternary": 0,
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "import/no-extraneous-dependencies": "off",
+    "global-require": "off"
+  }
+}
