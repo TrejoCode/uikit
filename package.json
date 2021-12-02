@@ -13,6 +13,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "rollup -c",
+    "prepare": "husky install",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "format:write": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
     "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx}\""
