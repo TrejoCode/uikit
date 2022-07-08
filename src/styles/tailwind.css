@@ -1,0 +1,28 @@
+/**
+ * Tailwindcss 3 base config
+ */
+
+/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins.
+ */
+@import 'tailwindcss/base';
+
+/**
+ * This injects Tailwind's component classes and any component classes
+ * registered by plugins.
+ */
+@import 'tailwindcss/components';
+
+/**
+ * Custom CSS files as "Components"
+ */
+/* @import url('atoms/button/button.css');
+@import url('atoms/input/input.css');
+@import url('atoms/switch/switch.css'); */
+
+/**
+ * This injects Tailwind's utility classes and any utility classes registered
+ * by plugins.
+ */
+@import 'tailwindcss/utilities';

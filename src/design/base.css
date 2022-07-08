@@ -1,0 +1,65 @@
+/**
+ * Extend base style
+ */
+
+/**
+ * 1.- Typography
+ */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.text-display-1,
+.text-display-2,
+.text-display-3,
+.text-display-4 {
+  font-weight: 700;
+}
+
+.text-display-1 {
+  font-size: 6rem;
+}
+
+.text-display-2 {
+  font-size: 5.5rem;
+}
+
+.text-display-3 {
+  font-size: 4.5rem;
+}
+
+.text-display-4 {
+  font-size: 3.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/**
+ * 2.- Buttons
+ */

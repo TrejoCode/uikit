@@ -1,0 +1,13 @@
+/** 
+ * Button common styles
+ */
+
+.__button {
+  font-weight: 700;
+  border-radius: 6.25rem;
+  transition: all 250ms ease-in-out;
+}
+
+.__button__transparent {
+  background-color: transparent;
+}

@@ -5,9 +5,10 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from 'rollup-plugin-typescript2';
-import WindiCSS from 'rollup-plugin-windicss';
+import postcss from 'rollup-plugin-postcss';
 import url from '@rollup/plugin-url';
 import css from 'rollup-plugin-import-css';
+import path from 'path';
 import pkg from './package.json';
 
 export default {
@@ -21,8 +22,13 @@ export default {
     resolve(),
     commonjs(),
     url(),
-    ...WindiCSS(),
+    typescript({ useTsconfigDeclarationDir: true }),
     typescript(),
+    postcss({
+      extract: path.resolve('dist/woonkly-uikit.css'),
+      minimize: true,
+      sourceMap: true,
+    }),
     css({ output: 'trejocode-uikit.css', minify: true }),
   ],
 };

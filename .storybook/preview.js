@@ -2,7 +2,7 @@
  * @description Main Storybook Preview configurations
  */
 
-import "windi.css";
+import "../src/styles/tailwind.css";
 
 const customViewports = {
   Android: {
