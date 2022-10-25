@@ -29,49 +29,57 @@ export const Warning = Template.bind({});
 export const Danger = Template.bind({});
 
 Primary.args = {
-  children: 'Button',
+  children: 'Conocer más',
   size: 'default',
   color: 'primary',
+  variation: 'filled',
 };
 
 PrimaryAlt.args = {
-  children: 'Button',
+  children: 'Conocer más',
   size: 'default',
   color: 'primaryAlt',
+  variation: 'filled',
 };
 
 Secondary.args = {
-  children: 'Button',
+  children: 'Conocer más',
   size: 'default',
   color: 'secondary',
+  variation: 'filled',
 };
 
 SecondaryAlt.args = {
-  children: 'Button',
+  children: 'Conocer más',
   size: 'default',
   color: 'secondaryAlt',
+  variation: 'filled',
 };
 
 Success.args = {
-  children: 'Button',
+  children: 'Conocer más',
   size: 'default',
   color: 'success',
+  variation: 'filled',
 };
 
 Info.args = {
-  children: 'Button',
+  children: 'Conocer más',
   size: 'default',
   color: 'info',
+  variation: 'filled',
 };
 
 Warning.args = {
-  children: 'Button',
+  children: 'Conocer más',
   size: 'default',
   color: 'warning',
+  variation: 'filled',
 };
 
 Danger.args = {
-  children: 'Button',
+  children: 'Conocer más',
   size: 'default',
   color: 'danger',
+  variation: 'filled',
 };

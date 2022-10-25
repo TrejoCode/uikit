@@ -86,26 +86,6 @@ module.exports = {
   safelist: [
     // Text Base
     'text-primary-base text-primaryAlt-base text-secondary-base text-secondaryAlt-base text-success-base text-info-base text-warning-base text-danger-base text-transparent text-gray text-dark-gray',
-    // Text Base !important
-    '!text-primary-base !text-primaryAlt-base !text-secondary-base !text-secondaryAlt-base !text-success-base !text-info-base !text-warning-base !text-danger-base !text-transparent !text-gray !text-dark-gray',
-    // Border base
-    'border-primary-base border-primaryAlt-base border-secondary-base border-secondaryAlt-base border-success-base border-info-base border-warning-base border-danger-base border-transparent border-gray border-dark-gray',
-    // Border base lighten
-    'border-primary-lighten border-primaryAlt-lighten border-secondary-lighten border-secondaryAlt-lighten border-success-lighten border-info-lighten border-warning-lighten border-danger-lighten border-transparent border-gray border-dark-gray',
-    // Border base darken
-    'border-primary-darken border-primaryAlt-darken border-secondary-darken border-secondaryAlt-darken border-success-darken border-info-darken border-warning-darken border-danger-darken border-transparent border-gray border-dark-gray',
-    // Background base
-    'bg-primary-base bg-primaryAlt-base bg-secondary-base bg-secondaryAlt-base bg-success-base bg-info-base bg-warning-base bg-danger-base bg-transparent',
-    // Background base !important
-    '!bg-primary-base !bg-primaryAlt-base !bg-secondary-base !bg-secondaryAlt-base !bg-success-base !bg-info-base !bg-warning-base !bg-danger-base !bg-transparent',
-    // Background lighten
-    'bg-primary-lighten bg-primaryAlt-lighten bg-secondary-lighten bg-secondaryAlt-lighten bg-success-lighten bg-info-lighten bg-warning-lighten bg-danger-lighten',
-    // Background lighten !important
-    '!bg-primary-lighten !bg-primaryAlt-lighten !bg-secondary-lighten !bg-secondaryAlt-lighten !bg-success-lighten !bg-info-lighten !bg-warning-lighten !bg-danger-lighten',
-    // Background darken
-    'bg-primary-darken bg-primaryAlt-darken bg-secondary-darken bg-secondaryAlt-darken bg-success-darken bg-info-darken bg-warning-darken bg-danger-darken',
-    // Background darken !important
-    '!bg-primary-darken !bg-primaryAlt-darken !bg-secondary-darken !bg-secondaryAlt-darken !bg-success-darken !bg-info-darken !bg-warning-darken !bg-danger-darken',
   ],
   plugins: [require('@tailwindcss/forms')],
 };

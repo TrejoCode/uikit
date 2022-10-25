@@ -2,43 +2,39 @@
  * @description <Button> Atom Component
  */
 
-import React from 'react';
+import React, { forwardRef } from 'react';
 import classnames from 'classnames';
-import { ButtonProps, SizesRecord, ColorsRecord, VariationsRecord } from './types';
+import { InterfaceButtonProps, SizesRecord, ColorsRecord, VariationsRecord } from './types';
 import SvgSpinner from '../Svg/Loaders/Spinner';
-import styles from './Button.module.css';
 
-const Button = ({
-  children,
-  size = 'default',
-  color = 'primary',
-  variation = 'filled',
-  disabled = false,
-  loading = false,
-  classNames,
-  onClick,
-  ...rest
-}: ButtonProps): JSX.Element => {
-  return (
+const Button = forwardRef<HTMLButtonElement, InterfaceButtonProps>(
+  (
+    {
+      children,
+      size = 'default',
+      color = 'primary',
+      variation = 'filled',
+      disabled = false,
+      loading = false,
+      classNames,
+      onClick,
+      ...rest
+    },
+    ref
+  ) => (
     <button
-      className={classnames([
-        styles.__button,
+      ref={ref}
+      className={classnames(
+        'tc-button',
         SizesRecord[size],
         ColorsRecord[color],
         VariationsRecord[variation],
-        `${variation === 'outline' || variation === 'filled' ? `border-${color}-base` : ''}`,
-        `${
-          variation === 'outline'
-            ? `${
-                disabled
-                  ? ''
-                  : `${styles.__button__transparent} !text-${color}-base hover:bg-opacity-20 focus:bg-opacity-10`
-              }`
-            : ''
-        }`,
-        `${disabled ? `!bg-${color}-lighten cursor-not-allowed` : ''}`,
-        classNames,
-      ])}
+        {
+          '--transparent': variation === 'outline' && !disabled,
+          [`text-${color}-base`]: variation === 'outline' && !disabled,
+        },
+        classNames
+      )}
       disabled={disabled}
       onClick={onClick}
       {...rest}
@@ -50,7 +46,7 @@ const Button = ({
         </div>
       )}
     </button>
-  );
-};
+  )
+);
 
 export default Button;

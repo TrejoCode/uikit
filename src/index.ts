@@ -1,6 +1,8 @@
 /**
  * @description Export all modules for Rollup
  */
-import 'virtual:windi.css';
+
+import './styles/build.css';
+
 export * from './atoms/Button';
 export * from './atoms/Svg';

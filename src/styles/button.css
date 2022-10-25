@@ -1,0 +1,65 @@
+/** 
+ * Button common styles
+ */
+
+.tc-button {
+  font-weight: 600;
+  border-radius: 0.75rem;
+  @apply text-white transition-all duration-200 ease-out flex items-center border-2 focus:outline-none focus:ring disabled:cursor-not-allowed;
+}
+
+.tc-button.--small {
+  @apply text-sm py-2 px-4;
+}
+
+.tc-button.--default {
+  @apply text-base py-3 px-6;
+}
+
+.tc-button.--large {
+  @apply text-lg py-3 px-7;
+}
+
+.tc-button.--primary {
+  @apply bg-primary-base hover:bg-primary-lighten focus:bg-primary-darken focus:ring-primary-lighten focus:border-primary-lighten border-primary-base
+  disabled:bg-primary-lighten;
+}
+
+.tc-button.--primaryAlt {
+  @apply bg-primaryAlt-base hover:bg-primaryAlt-lighten focus:bg-primaryAlt-darken focus:ring-primaryAlt-lighten focus:border-primaryAlt-lighten border-primaryAlt-base
+  disabled:bg-primaryAlt-lighten;
+}
+
+.tc-button.--secondary {
+  @apply bg-secondary-base hover:bg-secondary-lighten focus:bg-secondary-darken focus:ring-secondary-lighten focus:border-secondary-lighten border-secondary-base
+  disabled:bg-secondary-lighten;
+}
+
+.tc-button.--secondaryAlt {
+  @apply bg-secondaryAlt-base hover:bg-secondaryAlt-lighten focus:bg-secondaryAlt-darken focus:ring-secondaryAlt-lighten focus:border-secondaryAlt-lighten border-secondaryAlt-base
+  disabled:bg-secondaryAlt-lighten;
+}
+
+.tc-button.--success {
+  @apply bg-success-base hover:bg-success-lighten focus:bg-success-darken focus:ring-success-lighten focus:border-success-lighten border-success-base disabled:bg-success-lighten;
+}
+
+.tc-button.--info {
+  @apply bg-info-base hover:bg-info-lighten focus:bg-info-darken focus:ring-info-lighten focus:border-info-lighten border-info-base disabled:bg-info-lighten;
+}
+
+.tc-button.--warning {
+  @apply bg-warning-base hover:bg-warning-lighten focus:bg-warning-darken focus:ring-warning-lighten focus:border-warning-lighten border-warning-base disabled:bg-warning-lighten;
+}
+
+.tc-button.--danger {
+  @apply bg-danger-base hover:bg-danger-lighten focus:bg-danger-darken focus:ring-danger-lighten focus:border-danger-lighten border-danger-base disabled:bg-danger-lighten;
+}
+
+.tc-button.--transparent {
+  @apply bg-transparent;
+}
+
+.tc-button.--outline {
+  @apply hover:bg-opacity-20 focus:bg-opacity-10;
+}
