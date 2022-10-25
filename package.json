@@ -36,6 +36,16 @@
       "react-app/jest"
     ]
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trejocode/uikit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trejocode/uikit/issues"
+  },
   "author": "Trejocode",
   "license": "MIT",
   "devDependencies": {
