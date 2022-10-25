@@ -1,3 +1,10 @@
+## [0.1.1](https://github.com/trejocode/uikit/compare/v0.1.0...v0.1.1) (2022-10-25)
+
+
+### Bug Fixes
+
+* ⚙️ Package publish config added ([9a026ce](https://github.com/trejocode/uikit/commit/9a026ce526fa5c1d91ba7157246a81c5ef003b2e))
+
 # [0.1.0](https://github.com/TrejoCode/uikit/compare/v0.0.0...v0.1.0) (2022-10-25)
 
 
