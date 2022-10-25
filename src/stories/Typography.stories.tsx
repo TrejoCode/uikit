@@ -17,6 +17,6 @@ export default {
 /**
  * Create controls for Typography
  */
-export const Template: ComponentStory<typeof PreviewTypography> = (args) => <PreviewTypography {...args} />;
+export const Template: ComponentStory<typeof PreviewTypography> = () => <PreviewTypography />;
 
 Template.storyName = 'Typography';

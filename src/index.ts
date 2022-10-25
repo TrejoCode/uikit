@@ -5,4 +5,4 @@
 import './styles/build.css';
 
 export * from './atoms/Button';
-export * from './atoms/Svg';
+export * from './atoms/Icons';

@@ -17,6 +17,6 @@ export default {
 /**
  * Create controls for Colors
  */
-export const Template: ComponentStory<typeof PreviewColors> = (args) => <PreviewColors {...args} />;
+export const Template: ComponentStory<typeof PreviewColors> = () => <PreviewColors />;
 
 Template.storyName = 'Colors';

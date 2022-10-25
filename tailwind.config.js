@@ -86,6 +86,16 @@ module.exports = {
   safelist: [
     // Text Base
     'text-primary-base text-primaryAlt-base text-secondary-base text-secondaryAlt-base text-success-base text-info-base text-warning-base text-danger-base text-transparent text-gray text-dark-gray',
+    // Background base
+    'bg-primary-base bg-primaryAlt-base bg-secondary-base bg-secondaryAlt-base bg-success-base bg-info-base bg-warning-base bg-danger-base bg-transparent',
+    // Background lighten
+    'bg-primary-lighten bg-primaryAlt-lighten bg-secondary-lighten bg-secondaryAlt-lighten bg-success-lighten bg-info-lighten bg-warning-lighten bg-danger-lighten',
+    // Background darken
+    'bg-primary-darken bg-primaryAlt-darken bg-secondary-darken bg-secondaryAlt-darken bg-success-darken bg-info-darken bg-warning-darken bg-danger-darken',
+    // Fill
+    'fill-primary-base fill-primaryAlt-base fill-secondary-base fill-secondaryAlt-base fill-success-base fill-info-base fill-warning-base fill-danger-base fill-transparent fill-gray fill-dark-gray',
+    // Stroke
+    'stroke-primary-base stroke-primaryAlt-base stroke-secondary-base stroke-secondaryAlt-base stroke-success-base stroke-info-base stroke-warning-base stroke-danger-base stroke-transparent stroke-gray stroke-dark-gray',
   ],
   plugins: [require('@tailwindcss/forms')],
 };

@@ -5,7 +5,7 @@
 import React, { forwardRef } from 'react';
 import classnames from 'classnames';
 import { InterfaceButtonProps, SizesRecord, ColorsRecord, VariationsRecord } from './types';
-import SvgSpinner from '../Svg/Loaders/Spinner';
+import { Icon } from '../Icons';
 
 const Button = forwardRef<HTMLButtonElement, InterfaceButtonProps>(
   (
@@ -21,32 +21,43 @@ const Button = forwardRef<HTMLButtonElement, InterfaceButtonProps>(
       ...rest
     },
     ref
-  ) => (
-    <button
-      ref={ref}
-      className={classnames(
-        'tc-button',
-        SizesRecord[size],
-        ColorsRecord[color],
-        VariationsRecord[variation],
-        {
-          '--transparent': variation === 'outline' && !disabled,
-          [`text-${color}-base`]: variation === 'outline' && !disabled,
-        },
-        classNames
-      )}
-      disabled={disabled}
-      onClick={onClick}
-      {...rest}
-    >
-      {children}
-      {loading && (
-        <div className="ml-2">
-          <SvgSpinner size={4} color={`${variation === 'outline' ? color : 'white'}`} />
-        </div>
-      )}
-    </button>
-  )
+  ): JSX.Element => {
+    /**
+     * Generate all icons classnames states
+     */
+    const getIconClassNames = (): string =>
+      classnames({
+        'fill-white': variation === 'filled',
+        [`fill-${color}-base`]: variation === 'outline',
+      });
+
+    return (
+      <button
+        ref={ref}
+        className={classnames(
+          'tc-button',
+          SizesRecord[size],
+          ColorsRecord[color],
+          VariationsRecord[variation],
+          {
+            '--transparent': variation === 'outline' && !disabled,
+            [`text-${color}-base`]: variation === 'outline' && !disabled,
+          },
+          classNames
+        )}
+        disabled={disabled}
+        onClick={onClick}
+        {...rest}
+      >
+        {children}
+        {loading && (
+          <span aria-live="polite" aria-busy="true" className="ml-1">
+            <Icon icon="load" spin fillClassName={getIconClassNames()} />
+          </span>
+        )}
+      </button>
+    );
+  }
 );
 
 export default Button;

@@ -63,10 +63,29 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/,
     },
+    expanded: true
   },
   viewport: {
     viewports: {
       ...customViewports,
     },
   },
+  backgrounds: {
+    default: "Light",
+    values: [
+      {
+        name: "Light",
+        value: "#FFFFFF"
+      },
+      {
+        name: "Dark",
+        value: "#0B0F1A"
+      }
+    ]
+  },
+  options: {
+    storySort: {
+      order: ['Design System', 'Atoms'],
+    },
+  }
 };
