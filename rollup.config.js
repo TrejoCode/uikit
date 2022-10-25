@@ -22,7 +22,6 @@ export default {
     commonjs(),
     url(),
     typescript({ useTsconfigDeclarationDir: true }),
-    typescript(),
     postcss({
       extract: path.resolve('dist/trejocode-uikit.css'),
       minimize: true,
