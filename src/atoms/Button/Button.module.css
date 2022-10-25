@@ -3,8 +3,8 @@
  */
 
 .__button {
-  font-weight: 700;
-  border-radius: 6.25rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
   transition: all 250ms ease-in-out;
 }
 

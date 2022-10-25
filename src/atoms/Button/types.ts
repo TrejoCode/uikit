@@ -36,7 +36,7 @@ type Colors = typeof colors[number];
 const SizesRecord: Record<Sizes, string> = {
   small: 'text-sm text-white py-2 px-4',
   default: 'text-base text-white py-3 px-6',
-  large: 'text-lg text-white py-4 px-8',
+  large: 'text-lg text-white py-3 px-7',
 };
 
 const ColorsRecord: Record<Colors, string> = {
@@ -61,7 +61,7 @@ const ColorsRecord: Record<Colors, string> = {
 };
 
 const VariationsRecord: Record<Variations, string> = {
-  filled: 'flex items-center border-2 bg-current focus:outline-none focus:ring',
+  filled: 'flex items-center border-2 focus:outline-none focus:ring',
   outline: 'flex items-center border-2 focus:outline-none focus:ring',
 };
 

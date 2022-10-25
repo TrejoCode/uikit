@@ -17,9 +17,7 @@
 /**
  * Custom CSS files as "Components"
  */
-/* @import url('atoms/button/button.css');
-@import url('atoms/input/input.css');
-@import url('atoms/switch/switch.css'); */
+@import url('./base.css');
 
 /**
  * This injects Tailwind's utility classes and any utility classes registered
