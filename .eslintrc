@@ -11,6 +11,7 @@
     "browser": true,
     "jest": true
   },
+  "ignorePatterns": ["**/*.css"],
   "settings": {
     "import/resolver": {
       "node": {

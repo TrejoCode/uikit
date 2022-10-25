@@ -32,46 +32,54 @@ Primary.args = {
   children: 'Conocer más',
   size: 'default',
   color: 'primary',
+  variation: 'filled',
 };
 
 PrimaryAlt.args = {
   children: 'Conocer más',
   size: 'default',
   color: 'primaryAlt',
+  variation: 'filled',
 };
 
 Secondary.args = {
   children: 'Conocer más',
   size: 'default',
   color: 'secondary',
+  variation: 'filled',
 };
 
 SecondaryAlt.args = {
   children: 'Conocer más',
   size: 'default',
   color: 'secondaryAlt',
+  variation: 'filled',
 };
 
 Success.args = {
   children: 'Conocer más',
   size: 'default',
   color: 'success',
+  variation: 'filled',
 };
 
 Info.args = {
   children: 'Conocer más',
   size: 'default',
   color: 'info',
+  variation: 'filled',
 };
 
 Warning.args = {
   children: 'Conocer más',
   size: 'default',
   color: 'warning',
+  variation: 'filled',
 };
 
 Danger.args = {
   children: 'Conocer más',
   size: 'default',
   color: 'danger',
+  variation: 'filled',
 };

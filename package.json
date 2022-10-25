@@ -10,13 +10,18 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run storybook",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "rollup -c",
+    "eslint:lint": "npx eslint src/**",
+    "eslint:fix": "npx eslint --fix src",
+    "build:tailwind": "npx tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/build.css",
+    "build": "npm run build:tailwind && rollup -c",
     "prepare": "husky install",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "format:write": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
-    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx}\""
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx}\"",
+    "add": "npm run format:write && git add ."
   },
   "keywords": [
     "uikit",
