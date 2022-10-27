@@ -1,3 +1,10 @@
+## [0.1.2](https://github.com/trejocode/uikit/compare/v0.1.1...v0.1.2) (2022-10-27)
+
+
+### Bug Fixes
+
+* ⚛️ Updated React version ([6e69694](https://github.com/trejocode/uikit/commit/6e696946a3406b4b38a73b0aee4b348fe3092726))
+
 ## [0.1.1](https://github.com/trejocode/uikit/compare/v0.1.0...v0.1.1) (2022-10-25)
 
 
