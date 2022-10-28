@@ -27,7 +27,6 @@ export declare const icons: {
     readonly user: JSX.Element;
     readonly eye: JSX.Element;
     readonly save: JSX.Element;
-    readonly rewoop: JSX.Element;
     readonly favorite: JSX.Element;
     readonly watchlist: JSX.Element;
     readonly message: JSX.Element;
