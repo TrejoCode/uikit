@@ -3,28 +3,13 @@
  */
 
 import React from 'react';
-import classnames from 'classnames';
-import { icons } from './icons';
-import { IconProps, SizesRecord } from './types';
+import { IconProps } from './types';
+import Feather from './Feather';
 
-const Icon = ({
-  icon,
-  size = 4,
-  fillClassName = 'currentColor',
-  strokeClassName,
-  spin = false,
-  ...props
-}: IconProps): JSX.Element => (
-  <svg
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-    className={classnames(SizesRecord[size], fillClassName, strokeClassName, {
-      'animate-spin': spin,
-    })}
-    {...props}
-  >
-    <>{icons[icon]}</>
-  </svg>
+const Icon = ({ icon, size = 32, color, ...props }: IconProps): JSX.Element => (
+  <span>
+    <Feather icon={icon} size={size} color={color} {...props} />
+  </span>
 );
 
 export default Icon;

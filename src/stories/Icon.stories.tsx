@@ -20,6 +20,6 @@ export default {
 export const Basic: ComponentStory<typeof Icon> = (args) => <Icon {...args} />;
 
 Basic.args = {
-  icon: 'checkmark',
-  size: 8,
+  icon: 'Activity',
+  className: 'stroke-primary-base',
 };
