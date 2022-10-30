@@ -1,3 +1,10 @@
+## [0.1.3](https://github.com/trejocode/uikit/compare/v0.1.2...v0.1.3) (2022-10-28)
+
+
+### Bug Fixes
+
+* **Icons:** 🩹 Fixed icons fill and stroke color ([f4f4e88](https://github.com/trejocode/uikit/commit/f4f4e882bc2c58910a2173f6690e3df5a6568d09))
+
 ## [0.1.2](https://github.com/trejocode/uikit/compare/v0.1.1...v0.1.2) (2022-10-27)
 
 
