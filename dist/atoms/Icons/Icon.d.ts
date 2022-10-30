@@ -3,5 +3,5 @@
  */
 /// <reference types="react" />
 import { IconProps } from './types';
-declare const Icon: ({ icon, size, fillClassName, strokeClassName, spin, ...props }: IconProps) => JSX.Element;
+declare const Icon: ({ icon, size, color, ...props }: IconProps) => JSX.Element;
 export default Icon;

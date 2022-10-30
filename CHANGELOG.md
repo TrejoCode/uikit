@@ -1,3 +1,11 @@
+## [0.1.4](https://github.com/trejocode/uikit/compare/v0.1.3...v0.1.4) (2022-10-30)
+
+
+### Bug Fixes
+
+* **Button:** 🩹 Button loader icon fixed ([8920627](https://github.com/trejocode/uikit/commit/89206270ef3ae2c61abeb2e1c8016071b4fefad9))
+* **Icons:** ✅ Feather icons instead local icons ([57e45e9](https://github.com/trejocode/uikit/commit/57e45e9c260959163670db5af41108f825b24b08))
+
 ## [0.1.3](https://github.com/trejocode/uikit/compare/v0.1.2...v0.1.3) (2022-10-28)
 
 

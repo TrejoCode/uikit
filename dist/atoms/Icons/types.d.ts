@@ -1,34 +1,23 @@
 /**
  * Type definition for Icon
  */
-import { icons } from './icons';
-export declare type IconType = keyof typeof icons;
-/**
- * Size properties
- */
-export declare const sizes: readonly [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 20];
-declare type Sizes = typeof sizes[number];
-export declare const SizesRecord: Record<Sizes, string>;
+import { icons } from './icons.types';
+export declare type Ficons = typeof icons[number];
 export interface IconProps {
     /**
-     * Icon component
+     * Feather icon component name
      */
-    icon: IconType;
+    icon: Ficons;
     /**
      * How large should the Checkmark be?
      */
-    size?: Sizes;
-    /**
-     * Fill property classname
-     */
-    fillClassName?: string;
-    /**
-     * Stroke property classname
-     */
-    strokeClassName?: string;
+    size?: string | number;
     /**
      * Add animate spin
      */
-    spin?: boolean;
+    color?: string;
+    /**
+     * Custom classnames
+     */
+    className: string;
 }
-export {};
