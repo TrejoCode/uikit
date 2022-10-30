@@ -52,7 +52,7 @@ const Button = forwardRef<HTMLButtonElement, InterfaceButtonProps>(
         {children}
         {loading && (
           <span aria-live="polite" aria-busy="true" className="ml-1">
-            <Icon icon="load" spin fillClassName={getIconClassNames()} />
+            <Icon icon="Loader" size={16} className={classnames(getIconClassNames(), 'animate-spin')} />
           </span>
         )}
       </button>
