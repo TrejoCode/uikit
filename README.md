@@ -65,7 +65,6 @@ This is a list of dependencies that are user for this module:
 
 - [Storybook]()
 - [Tailwindscss]()
-- [WindiCSS]()
 - [Rollup]()
 - [Typescript]()
 - [classnames]()
@@ -73,6 +72,3 @@ This is a list of dependencies that are user for this module:
 
 </br>
 
-## ⚠️ License
-
-Copyright (c) 2021-present [Woonkly](https://github.com/trejocode) and [Contributors](https://github.com/trejocode/contributors). `@woonkly/uikit` is free and open-source software licensed under the [MIT License](https://github.com/trejocode/uikit/blob/main/LICENSE).
