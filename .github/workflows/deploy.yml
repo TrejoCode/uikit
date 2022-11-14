@@ -22,3 +22,5 @@ jobs:
 
       - run: npm install
       - run: npm run build-storybook
+      - run: pm2 reload ui.trejocode.com
+      - run: pm2 save
