@@ -1,3 +1,10 @@
+## [0.1.5](https://github.com/trejocode/uikit/compare/v0.1.4...v0.1.5) (2022-11-14)
+
+
+### Bug Fixes
+
+* **Storybook:** ⚙️ Release options ([feca563](https://github.com/trejocode/uikit/commit/feca56326b0ce6c6ede6bf0790fcf7583a1462e9))
+
 ## [0.1.4](https://github.com/trejocode/uikit/compare/v0.1.3...v0.1.4) (2022-10-30)
 
 
