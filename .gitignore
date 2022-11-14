@@ -4,3 +4,4 @@ node_modules
 .idea
 dist
 src/styles/build.css
+storybook-static

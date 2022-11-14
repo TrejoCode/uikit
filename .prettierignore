@@ -3,3 +3,4 @@ build
 .husky
 .storybook
 dist
+storybook-static
