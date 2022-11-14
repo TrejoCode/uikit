@@ -12,7 +12,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm run storybook",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "export NODE_OPTIONS=--openssl-legacy-provider; build-storybook",
     "eslint:lint": "npx eslint src/**",
     "eslint:fix": "npx eslint --fix src",
     "build:tailwind": "npx tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/build.css",
