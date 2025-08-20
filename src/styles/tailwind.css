@@ -1,27 +1,54 @@
-/**
- * Tailwindcss base config
- */
+@import "tailwindcss";
 
-/**
- * This injects Tailwind's base styles and any base styles registered by
- * plugins.
- */
-@import 'tailwindcss/base';
+@theme {
+  --font-sans: "IBM Plex Sans", "sans-serif";
 
-/**
- * This injects Tailwind's component classes and any component classes
- * registered by plugins.
- */
-@import 'tailwindcss/components';
+  --color-primary-base: #3e816d;
+  --color-primary-darken: #316757;
+  --color-primary-lighten: #649a8a;
 
-/**
- * Custom CSS files as "Components"
- */
-@import url('./base.css');
-@import url('./button.css');
+  --color-primary-alt-base: #288091;
+  --color-primary-alt-darken: #206674;
+  --color-primary-alt-lighten: #5299a7;
 
-/**
- * This injects Tailwind's utility classes and any utility classes registered
- * by plugins.
- */
-@import 'tailwindcss/utilities';
+  --color-secondary-base: #263d54;
+  --color-secondary-darken: #1e3043;
+  --color-secondary-lighten: #516376;
+
+  --color-secondary-alt-base: #516376;
+  --color-secondary-alt-darken: #404f5e;
+  --color-secondary-alt-lighten: #738291;
+
+  --color-success-base: #008537;
+  --color-success-darken: #006a2c;
+  --color-success-lighten: #329d5e;
+
+  --color-warning-base: #706700;
+  --color-warning-darken: #595200;
+  --color-warning-lighten: #8c8532;
+
+  --color-danger-base: #c0392b;
+  --color-danger-darken: #992d22;
+  --color-danger-lighten: #cc6055;
+
+  --color-info-base: #207b8d;
+  --color-info-darken: #196270;
+  --color-info-lighten: #4c95a3;
+
+  --color-gray: #6c6c6c;
+  --color-dark-gray: #4b4b4b;
+
+  --text-display-1: 6rem;
+  --text-display-2: 5.5rem;
+  --text-display-3: 4.5rem;
+  --text-display-4: 3.5rem;
+}
+
+@layer utilities {
+  .text-display-1,
+  .text-display-2,
+  .text-display-3,
+  .text-display-4 {
+    font-weight: 700;
+  }
+}

@@ -1,6 +1,7 @@
 /**
- * @description Export all modules for Rollup
+ * @description Entry point for Rollup to export
  */
-import './styles/build.css';
-export * from './atoms/Button';
-export * from './atoms/Icons';
+import "./styles/build.css";
+export * from "./tokens";
+export * from "./atoms/Icons";
+export * from "./atoms/Button";

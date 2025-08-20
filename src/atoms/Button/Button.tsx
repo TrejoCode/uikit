@@ -1,49 +1,36 @@
 /**
- * @description <Button> Atom Component
+ * @description <Button> Component
  */
 
-import React, { forwardRef } from 'react';
-import classnames from 'classnames';
-import { InterfaceButtonProps, SizesRecord, ColorsRecord, VariationsRecord } from './types';
-import { Icon } from '../Icons';
+import { forwardRef } from "react";
+import classnames from "classnames";
+import type { InterfaceButtonProps } from "./Button.model";
+import { useButtonController } from "./Button.controller";
+import { Icon } from "../Icons";
 
 const Button = forwardRef<HTMLButtonElement, InterfaceButtonProps>(
   (
     {
       children,
-      size = 'default',
-      color = 'primary',
-      variation = 'filled',
+      size = "default",
+      color = "primary",
+      variant = "filled",
       disabled = false,
       loading = false,
-      classNames,
+      className,
       onClick,
       ...rest
     },
-    ref
-  ): JSX.Element => {
-    /**
-     * Generate all icons classnames states
-     */
-    const getIconClassNames = (): string =>
-      classnames({
-        'fill-white': variation === 'filled',
-        [`fill-${color}-base`]: variation === 'outline',
-      });
+    ref,
+  ) => {
+    const { buttonComposed, getIconColor } = useButtonController();
 
     return (
       <button
         ref={ref}
         className={classnames(
-          'tc-button',
-          SizesRecord[size],
-          ColorsRecord[color],
-          VariationsRecord[variation],
-          {
-            '--transparent': variation === 'outline' && !disabled,
-            [`text-${color}-base`]: variation === 'outline' && !disabled,
-          },
-          classNames
+          buttonComposed({ size, color, variant, disabled }),
+          className,
         )}
         disabled={disabled}
         onClick={onClick}
@@ -52,12 +39,17 @@ const Button = forwardRef<HTMLButtonElement, InterfaceButtonProps>(
         {children}
         {loading && (
           <span aria-live="polite" aria-busy="true" className="ml-1">
-            <Icon icon="Loader" size={16} className={classnames(getIconClassNames(), 'animate-spin')} />
+            <Icon
+              icon="Loader"
+              color={getIconColor(color, variant)}
+              size={16}
+              className="animate-spin"
+            />
           </span>
         )}
       </button>
     );
-  }
+  },
 );
 
 export default Button;

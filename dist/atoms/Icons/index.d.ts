@@ -1,4 +1,4 @@
 /**
- * Export for bundle
+ * @description Export for bundle
  */
-export { default as Icon } from './Icon';
+export { default as Icon } from "./Icon";

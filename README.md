@@ -6,7 +6,7 @@
 
 # Trejocode UIKit
 
-Collection of UI Components for trejocode projects
+Collection of UI Components for trejocode web projects
 
 ## ⚡️ Quickstart
 
@@ -58,17 +58,3 @@ export const View = () => {
 ```
 
 </br>
-
-## 🌱 Third Party Dependencies
-
-This is a list of dependencies that are user for this module:
-
-- [Storybook]()
-- [Tailwindscss]()
-- [Rollup]()
-- [Typescript]()
-- [classnames]()
-- [React Router DOM]()
-
-</br>
-

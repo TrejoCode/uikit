@@ -1,31 +1,31 @@
 /**
- * @description Rollup bundle base config
+ * @description Rollup bundle config
  */
-import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-import resolve from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
-import typescript from 'rollup-plugin-typescript2';
-import postcss from 'rollup-plugin-postcss';
-import url from '@rollup/plugin-url';
-import path from 'path';
-import pkg from './package.json';
 
+import typescript from "@rollup/plugin-typescript";
+import resolve from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
+import css from "rollup-plugin-import-css";
+
+/**
+ * @type {import('rollup').RollupOptions}
+ */
 export default {
-  input: 'src/index.ts',
-  output: [
-    { file: pkg.main, format: 'cjs', sourcemap: true },
-    { file: pkg.module, format: 'esm', sourcemap: true },
-  ],
+  input: "./src/index.ts",
+  output: {
+    file: "dist/bundle.js",
+    format: "esm",
+    sourcemap: true,
+    inlineDynamicImports: true,
+  },
+  cache: false,
   plugins: [
-    peerDepsExternal(),
-    resolve(),
+    css({ output: "trejocode-uikit.css" }),
     commonjs(),
-    url(),
-    typescript({ useTsconfigDeclarationDir: true }),
-    postcss({
-      extract: path.resolve('dist/trejocode-uikit.css'),
-      minimize: true,
-      sourceMap: true,
+    resolve(),
+    typescript({
+      tsconfig: "./tsconfig.build.json",
     }),
   ],
+  external: ["react", "react-dom"],
 };

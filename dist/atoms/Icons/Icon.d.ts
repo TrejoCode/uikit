@@ -1,7 +1,14 @@
 /**
- * @description <Icon> Atom Component
+ * @description <Icon> Component
  */
-/// <reference types="react" />
-import { IconProps } from './types';
-declare const Icon: ({ icon, size, color, ...props }: IconProps) => JSX.Element;
+import React from "react";
+import type { InterfaceIconProps } from "./Icons.model";
+declare const Icon: ({
+  icon,
+  size,
+  color,
+  ariaLabel,
+  ariaHidden,
+  ...props
+}: InterfaceIconProps) => React.ReactElement;
 export default Icon;

@@ -2,18 +2,18 @@
  * @description Custom Feather icon wrapper
  */
 
-import React from 'react';
-import * as Fi from 'react-feather';
-import { IconProps } from 'react-feather';
-import { Ficons } from './types';
+import React from "react";
+import * as FeatherIcon from "react-feather";
+import type { TypeFeatherProps } from "./Icons.model";
 
-interface InterfaceProps extends IconProps {
-  icon: Ficons;
-}
-
-const Feather = ({ icon, size, color, ...rest }: InterfaceProps): JSX.Element => {
-  const Icono = Fi[String(icon)];
-  return <Icono size={size} color={color} {...rest} />;
+const Feather = ({
+  icon,
+  size,
+  ...rest
+}: TypeFeatherProps): React.ReactElement => {
+  // @ts-expect-error No types for Feather as signatures
+  const Icon = FeatherIcon[String(icon)] || FeatherIcon.Activity;
+  return <Icon size={size} {...rest} />;
 };
 
 export default Feather;
