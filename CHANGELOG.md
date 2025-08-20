@@ -1,3 +1,13 @@
+# [1.0.0](https://github.com/trejocode/uikit/compare/v0.1.6...v1.0.0) (2025-08-20)
+
+### chore
+
+- release 2.0.0 ([c5672f1](https://github.com/trejocode/uikit/commit/c5672f116ea7a803080a84df34ceff812f66a733))
+
+### BREAKING CHANGES
+
+- upgrade to version 2.0.0
+
 ## [0.1.6](https://github.com/trejocode/uikit/compare/v0.1.5...v0.1.6) (2025-08-20)
 
 ### Bug Fixes
