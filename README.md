@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# Trejocode UIKit
+# Trejocode UIKit v2.0.0
 
 Collection of UI Components for trejocode web projects
 
