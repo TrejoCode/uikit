@@ -3,7 +3,7 @@
  */
 
 import clsx from "clsx";
-import { forwardRef } from "react";
+import React, { forwardRef } from "react";
 import type { InterfaceButtonProps } from "./Button.model";
 import { useButtonController } from "./Button.controller";
 import { Icon } from "../Icons";
