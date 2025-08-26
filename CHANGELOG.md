@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/trejocode/uikit/compare/v1.0.0...v1.0.1) (2025-08-26)
+
+### Bug Fixes
+
+- updated icons to lucide and exported types ([fbac865](https://github.com/trejocode/uikit/commit/fbac865d14ba0fba57e44160643b867ab18c8179))
+
 # [1.0.0](https://github.com/trejocode/uikit/compare/v0.1.6...v1.0.0) (2025-08-20)
 
 ### chore
