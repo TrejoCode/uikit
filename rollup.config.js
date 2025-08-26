@@ -19,18 +19,12 @@ export default {
       sourcemap: true,
       inlineDynamicImports: true,
     },
-    {
-      file: "dist/bundle.cjs.js",
-      format: "cjs",
-      sourcemap: true,
-      inlineDynamicImports: true,
-    },
   ],
   cache: false,
   plugins: [
     css({ output: "trejocode-uikit.css" }),
     commonjs(),
-    resolve({ browser: true, preferBuiltins: false }),
+    resolve({ browser: true }),
     typescript({
       tsconfig: "./tsconfig.build.json",
     }),
