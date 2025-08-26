@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/trejocode/uikit/compare/v1.1.0...v1.1.1) (2025-08-26)
+
+### Bug Fixes
+
+- removed lucide as dependency ([01f8ce2](https://github.com/trejocode/uikit/commit/01f8ce26912531c585d487401792bfc5e81deafd))
+
 # [1.1.0](https://github.com/trejocode/uikit/compare/v1.0.1...v1.1.0) (2025-08-26)
 
 ### Features
