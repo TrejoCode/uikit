@@ -2,8 +2,8 @@
  * @description <Button> Component
  */
 
+import clsx from "clsx";
 import { forwardRef } from "react";
-import classnames from "classnames";
 import type { InterfaceButtonProps } from "./Button.model";
 import { useButtonController } from "./Button.controller";
 import { Icon } from "../Icons";
@@ -28,7 +28,7 @@ const Button = forwardRef<HTMLButtonElement, InterfaceButtonProps>(
     return (
       <button
         ref={ref}
-        className={classnames(
+        className={clsx(
           buttonComposed({ size, color, variant, disabled }),
           className,
         )}
@@ -40,7 +40,7 @@ const Button = forwardRef<HTMLButtonElement, InterfaceButtonProps>(
         {loading && (
           <span aria-live="polite" aria-busy="true" className="ml-1">
             <Icon
-              icon="Loader"
+              icon="loader"
               color={getIconColor(color, variant)}
               size={16}
               className="animate-spin"

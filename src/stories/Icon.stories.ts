@@ -3,8 +3,8 @@
  */
 
 import type { Meta, StoryObj } from "@storybook/react-vite";
+import { iconNames } from "lucide-react/dynamic";
 import Icon from "../atoms/Icons/Icon";
-import { icons } from "../atoms/Icons/Icons.model";
 import { Colors } from "../tokens";
 
 const meta = {
@@ -12,8 +12,8 @@ const meta = {
   component: Icon,
   argTypes: {
     icon: {
-      options: icons,
       control: { type: "select" },
+      options: iconNames,
     },
     size: {
       control: { type: "number", min: 1 },
@@ -27,14 +27,14 @@ type Story = StoryObj<typeof meta>;
 
 export const Basic: Story = {
   args: {
-    icon: "Activity",
+    icon: "activity",
     color: Colors.primary.base,
   },
 };
 
 export const Size: Story = {
   args: {
-    icon: "Anchor",
+    icon: "anchor",
     size: 128,
     color: Colors.secondary.base,
   },

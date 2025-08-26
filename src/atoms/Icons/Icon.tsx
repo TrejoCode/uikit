@@ -4,11 +4,11 @@
 
 import React from "react";
 import type { InterfaceIconProps } from "./Icons.model";
-import Feather from "./Feather";
+import Lucide from "./Lucide";
 import { Colors } from "../../tokens";
 
 const Icon = ({
-  icon,
+  icon = "activity",
   size = 32,
   color = Colors.primary.base,
   ariaLabel = undefined,
@@ -16,7 +16,7 @@ const Icon = ({
   ...props
 }: InterfaceIconProps): React.ReactElement => (
   <span role="img" aria-label={ariaLabel} aria-hidden={ariaHidden}>
-    <Feather icon={icon} size={size} color={color} {...props} />
+    <Lucide icon={icon} size={size} color={color} {...props} />
   </span>
 );
 
