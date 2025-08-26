@@ -1,3 +1,9 @@
+## [1.1.2](https://github.com/trejocode/uikit/compare/v1.1.1...v1.1.2) (2025-08-26)
+
+### Bug Fixes
+
+- removed react as dep, moved to peer ([ce5a163](https://github.com/trejocode/uikit/commit/ce5a163ad97819f20a5dffc0628d135ce00ca098))
+
 ## [1.1.1](https://github.com/trejocode/uikit/compare/v1.1.0...v1.1.1) (2025-08-26)
 
 ### Bug Fixes
