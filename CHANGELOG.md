@@ -1,3 +1,9 @@
+## [1.1.3](https://github.com/trejocode/uikit/compare/v1.1.2...v1.1.3) (2025-08-26)
+
+### Bug Fixes
+
+- added React ([8f185ed](https://github.com/trejocode/uikit/commit/8f185ede19f395e46ddc9ddb4d9ddeb90411fdd9))
+
 ## [1.1.2](https://github.com/trejocode/uikit/compare/v1.1.1...v1.1.2) (2025-08-26)
 
 ### Bug Fixes

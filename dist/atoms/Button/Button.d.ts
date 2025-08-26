@@ -1,8 +1,9 @@
 /**
  * @description <Button> Component
  */
+import React from "react";
 import type { InterfaceButtonProps } from "./Button.model";
-declare const Button: import("react").ForwardRefExoticComponent<
-  InterfaceButtonProps & import("react").RefAttributes<HTMLButtonElement>
+declare const Button: React.ForwardRefExoticComponent<
+  InterfaceButtonProps & React.RefAttributes<HTMLButtonElement>
 >;
 export default Button;

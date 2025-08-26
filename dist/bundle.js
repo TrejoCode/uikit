@@ -1,4 +1,4 @@
-import React$1, { forwardRef, createElement, useState, useEffect } from "react";
+import React, { forwardRef, createElement, useState, useEffect } from "react";
 
 /**
  * @description Design system colors
@@ -7647,7 +7647,7 @@ const DynamicIcon = forwardRef(
 const Lucide = (_a) => {
   var { icon, size } = _a,
     rest = __rest(_a, ["icon", "size"]);
-  return React$1.createElement(
+  return React.createElement(
     DynamicIcon,
     Object.assign({ name: icon, size: size }, rest),
   );
@@ -7665,10 +7665,10 @@ const Icon = (_a) => {
       ariaHidden = undefined,
     } = _a,
     props = __rest(_a, ["icon", "size", "color", "ariaLabel", "ariaHidden"]);
-  return React$1.createElement(
+  return React.createElement(
     "span",
     { role: "img", "aria-label": ariaLabel, "aria-hidden": ariaHidden },
-    React$1.createElement(
+    React.createElement(
       Lucide,
       Object.assign({ icon: icon, size: size, color: color }, props),
     ),
