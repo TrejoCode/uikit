@@ -2,22 +2,18 @@
  * @description Types for Icon component
  */
 
-import type { AriaAttributes } from "react";
-import type { iconNames } from "lucide-react/dynamic";
+import type { AriaAttributes, ReactNode, ReactElement } from "react";
 
-export type TypeLucideIcons = (typeof iconNames)[number];
-
-export type TypeLucideProps = {
-  icon: TypeLucideIcons;
+export type TypeLucideProps = ReactElement<{
   size?: string | number;
-  color: string;
-};
+  color?: string;
+}>;
 
 export interface InterfaceIconProps {
   /**
-   * Feather icon component name
+   * Icon component to render
    */
-  icon: TypeLucideIcons;
+  children: ReactNode;
   /**
    * Width and height
    */

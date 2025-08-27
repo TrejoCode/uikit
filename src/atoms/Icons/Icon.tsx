@@ -2,22 +2,32 @@
  * @description <Icon> Component
  */
 
-import React from "react";
-import type { InterfaceIconProps } from "./Icons.model";
-import Lucide from "./Lucide";
+import { isValidElement, cloneElement, Children } from "react";
+import type { InterfaceIconProps, TypeLucideProps } from "./Icons.model";
 import { Colors } from "../../tokens";
 
 const Icon = ({
-  icon = "activity",
+  children,
   size = 32,
   color = Colors.primary.base,
   ariaLabel = undefined,
   ariaHidden = undefined,
   ...props
-}: InterfaceIconProps): React.ReactElement => (
-  <span role="img" aria-label={ariaLabel} aria-hidden={ariaHidden}>
-    <Lucide icon={icon} size={size} color={color} {...props} />
-  </span>
-);
+}: InterfaceIconProps) => {
+  return (
+    <span role="img" aria-label={ariaLabel} aria-hidden={ariaHidden} {...props}>
+      {Children.map(children, (child) => {
+        if (isValidElement(child)) {
+          return cloneElement(child as TypeLucideProps, {
+            size,
+            color,
+            ...(child.props || {}),
+          });
+        }
+        return child;
+      })}
+    </span>
+  );
+};
 
 export default Icon;

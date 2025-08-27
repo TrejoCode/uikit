@@ -3,12 +3,13 @@
  */
 
 import clsx from "clsx";
-import React, { forwardRef } from "react";
-import type { InterfaceButtonProps } from "./Button.model";
-import { useButtonController } from "./Button.controller";
+import React from "react";
 import { Icon } from "../Icons";
+import { Loader } from "lucide-react";
+import { useButtonController } from "./Button.controller";
+import type { InterfaceButtonProps } from "./Button.model";
 
-const Button = forwardRef<HTMLButtonElement, InterfaceButtonProps>(
+const Button = React.forwardRef<HTMLButtonElement, InterfaceButtonProps>(
   (
     {
       children,
@@ -39,12 +40,9 @@ const Button = forwardRef<HTMLButtonElement, InterfaceButtonProps>(
         {children}
         {loading && (
           <span aria-live="polite" aria-busy="true" className="ml-1">
-            <Icon
-              icon="loader"
-              color={getIconColor(color, variant)}
-              size={16}
-              className="animate-spin"
-            />
+            <Icon color={getIconColor(color, variant)} size={16}>
+              <Loader size={16} className="animate-spin" />
+            </Icon>
           </span>
         )}
       </button>
