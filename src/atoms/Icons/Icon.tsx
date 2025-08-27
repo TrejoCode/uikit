@@ -2,7 +2,7 @@
  * @description <Icon> Component
  */
 
-import { isValidElement, cloneElement, Children } from "react";
+import React from "react";
 import type { InterfaceIconProps, TypeLucideProps } from "./Icons.model";
 import { Colors } from "../../tokens";
 
@@ -16,9 +16,9 @@ const Icon = ({
 }: InterfaceIconProps) => {
   return (
     <span role="img" aria-label={ariaLabel} aria-hidden={ariaHidden} {...props}>
-      {Children.map(children, (child) => {
-        if (isValidElement(child)) {
-          return cloneElement(child as TypeLucideProps, {
+      {React.Children.map(children, (child) => {
+        if (React.isValidElement(child)) {
+          return React.cloneElement(child as TypeLucideProps, {
             size,
             color,
             ...(child.props || {}),
