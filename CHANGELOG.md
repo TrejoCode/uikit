@@ -1,3 +1,9 @@
+# [1.2.0](https://github.com/trejocode/uikit/compare/v1.1.3...v1.2.0) (2025-08-27)
+
+### Features
+
+- lucide icons as external dep for Icons ([4dd290f](https://github.com/trejocode/uikit/commit/4dd290f90bd0ffa48f70be02188de8aefb2f700c))
+
 ## [1.1.3](https://github.com/trejocode/uikit/compare/v1.1.2...v1.1.3) (2025-08-26)
 
 ### Bug Fixes
