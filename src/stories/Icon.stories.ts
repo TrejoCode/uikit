@@ -2,16 +2,19 @@
  * Icon Story
  */
 
-import { createElement } from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Activity } from "lucide-react";
 import Icon from "../atoms/Icons/Icon";
+import { icons } from "../atoms/Icons/Icons.model";
 import { Colors } from "../tokens";
 
 const meta = {
   title: "Atoms/Icon",
   component: Icon,
   argTypes: {
+    icon: {
+      options: icons,
+      control: { type: "select" },
+    },
     size: {
       control: { type: "number", min: 1 },
     },
@@ -24,8 +27,15 @@ type Story = StoryObj<typeof meta>;
 
 export const Basic: Story = {
   args: {
-    children: createElement(Activity),
+    icon: "Activity",
     color: Colors.primary.base,
-    size: 256,
+  },
+};
+
+export const Size: Story = {
+  args: {
+    icon: "Anchor",
+    size: 128,
+    color: Colors.secondary.base,
   },
 };

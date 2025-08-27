@@ -64,7 +64,7 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
-    "lucide-react": "^0.541.0",
+    "react-feather": "^2.0.10",
     "tailwind-merge": "^3.3.1",
     "tailwind-variants": "^2.1.0"
   },
@@ -98,7 +98,6 @@
     "globals": "^16.3.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.5",
-    "lucide-react": "^0.541.0",
     "playwright": "^1.54.2",
     "prettier": "^3.6.2",
     "react": ">=19.1.0",
@@ -115,7 +114,6 @@
   },
   "peerDependencies": {
     "react": ">=19.1.0",
-    "react-dom": ">=19.1.0",
-    "lucide-react": "^0.541.0"
+    "react-dom": ">=19.1.0"
   }
 }

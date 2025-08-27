@@ -5,7 +5,6 @@
 import clsx from "clsx";
 import React from "react";
 import { Icon } from "../Icons";
-import { Loader } from "lucide-react";
 import { useButtonController } from "./Button.controller";
 import type { InterfaceButtonProps } from "./Button.model";
 
@@ -40,9 +39,12 @@ const Button = React.forwardRef<HTMLButtonElement, InterfaceButtonProps>(
         {children}
         {loading && (
           <span aria-live="polite" aria-busy="true" className="ml-1">
-            <Icon color={getIconColor(color, variant)} size={16}>
-              <Loader size={16} className="animate-spin" />
-            </Icon>
+            <Icon
+              icon="Loader"
+              color={getIconColor(color, variant)}
+              size={16}
+              className="animate-spin"
+            />
           </span>
         )}
       </button>
