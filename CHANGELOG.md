@@ -1,3 +1,9 @@
+# [1.3.0](https://github.com/trejocode/uikit/compare/v1.2.0...v1.3.0) (2025-08-27)
+
+### Features
+
+- adde react-feather for icons ([c7fb12b](https://github.com/trejocode/uikit/commit/c7fb12b84d9a8562f5cfbdfba83575dc3316fa10))
+
 # [1.2.0](https://github.com/trejocode/uikit/compare/v1.1.3...v1.2.0) (2025-08-27)
 
 ### Features

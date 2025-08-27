@@ -1,0 +1,36 @@
+/**
+ * @description Types for Icon component
+ */
+import type { AriaAttributes } from "react";
+import type { IconProps } from "react-feather";
+export declare const icons: readonly ["Activity", "Airplay", "AlertCircle", "AlertOctagon", "AlertTriangle", "AlignCenter", "AlignJustify", "AlignLeft", "AlignRight", "Anchor", "Aperture", "Archive", "ArrowDownCircle", "ArrowDownLeft", "ArrowDownRight", "ArrowDown", "ArrowLeftCircle", "ArrowLeft", "ArrowRightCircle", "ArrowRight", "ArrowUpCircle", "ArrowUpLeft", "ArrowUpRight", "ArrowUp", "AtSign", "Award", "BarChart2", "BarChart", "BatteryCharging", "Battery", "BellOff", "Bell", "Bluetooth", "Bold", "BookOpen", "Book", "Bookmark", "Box", "Briefcase", "Calendar", "CameraOff", "Camera", "Cast", "CheckCircle", "CheckSquare", "Check", "ChevronDown", "ChevronLeft", "ChevronRight", "ChevronUp", "ChevronsDown", "ChevronsLeft", "ChevronsRight", "ChevronsUp", "Chrome", "Circle", "Clipboard", "Clock", "CloudDrizzle", "CloudLightning", "CloudOff", "CloudRain", "CloudSnow", "Cloud", "Code", "Codepen", "Codesandbox", "Coffee", "Columns", "Command", "Compass", "Copy", "CornerDownLeft", "CornerDownRight", "CornerLeftDown", "CornerLeftUp", "CornerRightDown", "CornerRightUp", "CornerUpLeft", "CornerUpRight", "Cpu", "CreditCard", "Crop", "Crosshair", "Database", "Delete", "Disc", "DivideCircle", "DivideSquare", "Divide", "DollarSign", "DownloadCloud", "Download", "Dribbble", "Droplet", "Edit2", "Edit3", "Edit", "ExternalLink", "EyeOff", "Eye", "Facebook", "FastForward", "Feather", "Figma", "FileMinus", "FilePlus", "FileText", "File", "Film", "Filter", "Flag", "FolderMinus", "FolderPlus", "Folder", "Framer", "Frown", "Gift", "GitBranch", "GitCommit", "GitMerge", "GitPullRequest", "GitHub", "Gitlab", "Globe", "Grid", "HardDrive", "Hash", "Headphones", "Heart", "HelpCircle", "Hexagon", "Home", "Image", "Inbox", "Info", "Instagram", "Italic", "Key", "Layers", "Layout", "LifeBuoy", "Link2", "Link", "Linkedin", "List", "Loader", "Lock", "LogIn", "LogOut", "Mail", "MapPin", "Map", "Maximize2", "Maximize", "Meh", "Menu", "MessageCircle", "MessageSquare", "MicOff", "Mic", "Minimize2", "Minimize", "MinusCircle", "MinusSquare", "Minus", "Monitor", "Moon", "MoreHorizontal", "MoreVertical", "MousePointer", "Move", "Music", "Navigation2", "Navigation", "Octagon", "Package", "Paperclip", "PauseCircle", "Pause", "PenTool", "Percent", "PhoneCall", "PhoneForwarded", "PhoneIncoming", "PhoneMissed", "PhoneOff", "PhoneOutgoing", "Phone", "PieChart", "PlayCircle", "Play", "PlusCircle", "PlusSquare", "Plus", "Pocket", "Power", "Printer", "Radio", "RefreshCcw", "RefreshCw", "Repeat", "Rewind", "RotateCcw", "RotateCw", "Rss", "Save", "Scissors", "Search", "Send", "Server", "Settings", "Share2", "Share", "ShieldOff", "Shield", "ShoppingBag", "ShoppingCart", "Shuffle", "Sidebar", "SkipBack", "SkipForward", "Slack", "Slash", "Sliders", "Smartphone", "Smile", "Speaker", "Square", "Star", "StopCircle", "Sun", "Sunrise", "Sunset", "Table", "Tablet", "Tag", "Target", "Terminal", "Thermometer", "ThumbsDown", "ThumbsUp", "ToggleLeft", "ToggleRight", "Tool", "Trash2", "Trash", "Trello", "TrendingDown", "TrendingUp", "Triangle", "Truck", "Tv", "Twitch", "Twitter", "Type", "Umbrella", "Underline", "Unlock", "UploadCloud", "Upload", "UserCheck", "UserMinus", "UserPlus", "UserX", "User", "Users", "VideoOff", "Video", "Voicemail", "Volume1", "Volume2", "VolumeX", "Volume", "Watch", "WifiOff", "Wifi", "Wind", "XCircle", "XOctagon", "XSquare", "X", "Youtube", "ZapOff", "Zap", "ZoomIn", "ZoomOut"];
+export type TypeFeatherIcons = (typeof icons)[number];
+export type TypeFeatherProps = IconProps & {
+    icon: TypeFeatherIcons;
+};
+export interface InterfaceIconProps {
+    /**
+     * Feather icon component name
+     */
+    icon: TypeFeatherIcons;
+    /**
+     * Width and height
+     */
+    size?: string | number;
+    /**
+     * Custom classnames
+     */
+    className?: string;
+    /**
+     * Color
+     */
+    color: string;
+    /**
+     * Aria label
+     */
+    ariaLabel?: AriaAttributes["aria-label"];
+    /**
+     * Aria hidden
+     */
+    ariaHidden?: AriaAttributes["aria-hidden"];
+}
