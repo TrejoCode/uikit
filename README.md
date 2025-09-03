@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# Trejocode UIKit v1.0.0
+# Trejocode UIKit
 
 Collection of UI Components for trejocode web projects
 
@@ -37,7 +37,7 @@ Import stylesheet in your **root app entry**:
 
 ```javascript
 // app.tsx, app.jsx
-import "@trejocode/uikit/dist/trejocode-uikit.css";
+import "@trejocode/uikit/styles";
 ```
 
 </br>
